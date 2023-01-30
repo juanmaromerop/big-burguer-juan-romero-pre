@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $crema;
+}
+
+// HEADER
+.navbar {
+    background-color: $crema;
+
+    .nav-item {
+        .nav-link {
+            padding: 1rem;
+            text-decoration: none;
+            font-family: 'Ultra', serif;
+            font-size: 1.6rem;
+            color: $marron;
+            transition: all linear .3s;
+
+            &:hover {
+                color: $naranja;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+    color: $naranja;
+}
+
+.logo {
+    width: 5.5rem;
+    border-radius: 50%;
+}
+@media screen and (max-width: 578px){
+    .conteiner-fluid{
+        width: 80%;
+    }
+}
+
+// TITULO
+.titulo {
+    margin: 6rem 0 0 2rem;
+    font-size: 4rem;
+    font-family: $titulo;
+    color: $naranja;
+}
+
+//   MAIN
+.main__section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1.5rem;
+    justify-content: center;
+    padding: 1.5rem;
+
+    .main__article {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #efe0cc;
+        padding: 2rem;
+        gap: 1rem;
+        border-radius: .6rem;
+        box-shadow: 7px 5px 14px -6px $marron;
+
+        .main__article--img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: .6rem;
+        }
+
+        .main__article--h2 {
+            font-size: 3rem;
+            font-family: $titulo2;
+            color: $naranja;
+        }
+
+        .main__article--p {
+            font-size: 1.4rem;
+            font-family: $texto;
+            text-align: center;
+        }
+
+        .button {
+            font-size: 1.2rem;
+            font-family: $titulo;
+            background-color: $marron;
+            border: none;
+            color: $blanco;
+            cursor: pointer;
+            padding: .8rem 1.6rem;
+            text-decoration: none;
+            transition: background-color linear .3s;
+            border-radius: .6rem;
+
+            &:hover {
+                background-color: $naranja;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1000px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: 578px){
+        display: flex;
+        flex-direction: column;
+    
+    }
+}
+
+//   SECTION UBICACION
+.sectionubi {
+    background-color: #efe0cc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1.5rem;
+    padding: 2rem;
+    border-radius: .3rem;
+    box-shadow: 7px 5px 14px -6px $marron;
+    align-items: center;
+
+    .sectionubi__div {
+        margin-right: 1rem;
+
+        .sectionubi__h3 {
+            font-size: 4rem;
+            font-family: $titulo;
+            color: $marron;
+        }
+
+        .sectionubi__p {
+            font-size: 2rem;
+            font-family: $texto;
+            color: $naranja;
+            padding-bottom: 3rem;
+        }
+
+        .sectionubi__input {
+            width: 75%;
+            font-size: 2rem;
+            font-family: var(--texto);
+            padding: 1.8rem 2rem;
+            background-color: transparent;
+            color: #4e2313;
+            border: none;
+            border-bottom: solid .1rem #4e2313;
+            outline: none;
+
+            &::placeholder {
+                color: $marron;
+                font-family: $texto;
+                @media screen and (max-width: 578px){
+                    text-align: center;
+                }
+            }
+        }
+        @media screen and (max-width: 578px){
+            display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        }
+    }
+    @media screen and (max-width: 578px){
+        flex-direction: column;
+    }
+    .sectionubi__img{
+        @media screen and (max-width: 578px){
+            margin-top: 1rem;
+        }
+    }
+}
+.button {
+    font-size: 1.2rem;
+    font-family: $titulo;
+    background-color: $marron;
+    border: none;
+    color: $blanco;
+    cursor: pointer;
+    padding: .8rem 1.6rem;
+    text-decoration: none;
+    transition: background-color linear .3s;
+    border-radius: .6rem;
+    &:hover {
+        background-color: $naranja;
+    }
+}
+.sectionubi__img img {
+    border-radius: .5rem;
+}
+
+//   SECTION
+.section {
+    background-color: $marron;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+
+    .section__div {
+        margin: 3rem;
+        font-size: 5.5rem;
+        margin-top: 6rem;
+
+        &:first-child {
+            margin-right: auto;
+            margin-top: 3rem;
+        }
+
+        .section__h2 {
+            font-size: 3.5rem;
+            font-family: $titulo;
+            margin: 2rem;
+            color: $crema;
+        }
+
+        .section__h3 {
+            font-size: 3rem;
+            font-family: $titulo2;
+            color: $blanco;
+        }
+
+        .section__ul {
+            list-style: none;
+
+            .section__li {
+                margin: 2rem 0;
+
+                a {
+                    font-size: 1.8rem;
+                    font-family: $texto;
+                    color: $blanco;
+                    text-decoration: none;
+                    margin: 5rem 0rem;
+                }
+            }
+        }
+
+        .section__a {
+            font-size: 1.8rem;
+            font-family: $texto;
+            color: $blanco;
+            text-decoration: none;
+            margin: 2rem 0;
+        }
+    }
+    @media screen and (max-width: 578px){
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+//   FOOTER
+.footer {
+    padding: 2rem;
+    background-color: $marron;
+    display: flex;
+    justify-content: space-between;
+
+    .footer__contenedor {
+        margin-top: 1.5rem;
+
+        .footer__contenedor--p {
+            font-size: 1.5rem;
+            font-family: $texto;
+            color: $blanco;
+        }
+
+        &:last-child {
+            margin-top: 1rem;
+        }
+
+        i {
+            font-size: 2.5rem;
+            margin: 0 1rem;
+            color: $blanco;
+        }
+    }
+    @media screen and (max-width: 578px){
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
+

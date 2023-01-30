@@ -1,0 +1,101 @@
+/* CONTACTO PAGE */
+/* MAIN */
+
+.contacto {
+    display: flex;
+    justify-content: space-between;
+    background-color: #efe0cc;
+    margin: 2rem;
+    padding: 2rem;
+    box-shadow: 7px 5px 14px -6px $marron;
+    border-radius: .6rem;
+}
+
+.contacto__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.contacto__input {
+    width: 40rem;
+    font-size: 2rem;
+    font-family: $texto;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid .1rem #4e2313;
+    outline: none;
+    color: $marron;
+    resize: none;
+}
+
+.contacto__section .button {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    padding: .5rem 4rem;
+}
+
+.contacto__input::placeholder {
+    font-size: $texto;
+    color: $marron;
+}
+
+.contacto__iframe {
+    width: 40rem;
+}
+
+@media screen and (max-width: 1000px){
+    /* CONTACTO PAGE */
+    /* MAIN */
+
+    .contacto {
+        flex-direction: column;
+    }
+
+    .contacto__section {
+        gap: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .contacto__input {
+        text-align: center;
+        width: 80%;
+    }
+
+    .contacto__iframe {
+        width: 80%;
+    }
+
+    .contacto__input::placeholder {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 578px){
+     /* CONTACTO PAGE */
+    /* MAIN */
+
+    .contacto {
+        flex-direction: column;
+    }
+
+    .contacto__section {
+        gap: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .contacto__input {
+        text-align: center;
+        width: 80%;
+    }
+
+    .contacto__iframe {
+        width: 80%;
+    }
+
+    .contacto__input::placeholder {
+        text-align: center;
+    }
+}
