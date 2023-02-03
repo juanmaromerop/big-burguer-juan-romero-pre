@@ -185,12 +185,16 @@ body {
           color: #F3F2FD;
           text-decoration: none;
           margin: 5rem 0rem; }
+          .section .section__div .section__ul .section__li a:hover {
+            text-decoration: underline; }
     .section .section__div .section__a {
       font-size: 1.8rem;
       font-family: "Lexend", sans-serif;
       color: #F3F2FD;
       text-decoration: none;
       margin: 2rem 0; }
+      .section .section__div .section__a:hover {
+        text-decoration: underline; }
   @media screen and (max-width: 578px) {
     .section {
       flex-direction: column;

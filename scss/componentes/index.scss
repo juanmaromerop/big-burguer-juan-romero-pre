@@ -251,6 +251,9 @@ body {
                     color: $blanco;
                     text-decoration: none;
                     margin: 5rem 0rem;
+                    &:hover{
+                        text-decoration: underline;
+                    }
                 }
             }
         }
@@ -261,6 +264,9 @@ body {
             color: $blanco;
             text-decoration: none;
             margin: 2rem 0;
+             &:hover{
+                        text-decoration: underline;
+                    }
         }
     }
 
