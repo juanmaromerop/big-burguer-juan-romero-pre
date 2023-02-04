@@ -73,7 +73,7 @@ body {
       border: none;
       color: #F3F2FD;
       cursor: pointer;
-      padding: .8rem 1.6rem;
+      padding: .5rem 4rem;
       text-decoration: none;
       transition: background-color linear .3s;
       border-radius: .6rem; }
@@ -163,6 +163,10 @@ body {
     margin: 3rem;
     font-size: 5.5rem;
     margin-top: 6rem; }
+    @media screen and (max-width: 578px) {
+      .section .section__div {
+        margin: 2;
+        margin-top: 0; } }
     .section .section__div:first-child {
       margin-right: auto;
       margin-top: 3rem; }
@@ -283,7 +287,8 @@ body {
     align-items: center;
     gap: 3rem; }
     .contacto .contacto__section .contacto__input {
-      width: 40rem;
+      width: 50rem;
+      margin-left: 1rem;
       font-size: 2rem;
       font-family: "Lexend", sans-serif;
       background-color: transparent;
@@ -300,7 +305,8 @@ body {
       margin-left: 2rem;
       padding: .5rem 4rem; }
     .contacto .contacto__section .contacto__iframe {
-      width: 40rem; }
+      width: 55rem;
+      margin-right: 1rem; }
 
 @media screen and (max-width: 1000px) {
   .contacto {
@@ -338,45 +344,35 @@ body {
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 2rem;
   margin: 2rem; }
-
-.novedades__div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-  box-shadow: 7px 5px 14px -6px #4e2313;
-  border-radius: .6rem; }
-
-.novedades__img {
-  width: 100%;
-  border-radius: .6rem; }
-
-.novedades__h3 {
-  font-size: 3rem;
-  font-family: "DM Serif Display", serif;
-  color: #4e2313; }
-
-.novedades__p {
-  font-size: 2rem;
-  font-family: "Lexend", sans-serif;
-  color: #4e2313;
-  text-align: center; }
-
-@media screen and (max-width: 1000px) {
-  /* NOVEDADES PAGE */
-  /* MAIN */
-  .novedades {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr); } }
-
-@media screen and (max-width: 578px) {
-  /* NOVEDADES PAGE */
-  /* MAIN */
-  .novedades {
+  @media screen and (max-width: 1000px) {
+    .novedades {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr); } }
+  @media screen and (max-width: 578px) {
+    .novedades {
+      display: flex;
+      flex-direction: column; } }
+  .novedades .novedades__div {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    box-shadow: 7px 5px 14px -6px #4e2313;
+    border-radius: .6rem; }
+    .novedades .novedades__div .novedades__img {
+      width: 100%;
+      border-radius: .6rem; }
+    .novedades .novedades__div .novedades__h3 {
+      font-size: 3rem;
+      font-family: "DM Serif Display", serif;
+      color: #4e2313; }
+    .novedades .novedades__div .novedades__p {
+      font-size: 2rem;
+      font-family: "Lexend", sans-serif;
+      color: #4e2313;
+      text-align: center; }
 
 /* NOSOTROS PAGE */
 /* MAIN */
@@ -385,40 +381,30 @@ body {
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 2rem;
   margin: 2rem; }
-
-.nosotros__section {
-  display: flex;
-  padding: 2rem;
-  gap: 2rem;
-  border-radius: .6rem;
-  box-shadow: 7px 5px 14px -6px #4e2313;
-  align-items: center;
-  width: 100%; }
-
-.nosotros__img {
-  border-radius: .6rem;
-  width: 100%; }
-
-.nosotros__h3 {
-  font-size: 2.5rem;
-  font-family: "DM Serif Display", serif;
-  color: #4e2313; }
-
-.nosotros__p {
-  font-size: 1.8rem;
-  font-family: "Lexend", sans-serif;
-  color: #4e2313;
-  text-align: center; }
-
-@media screen and (max-width: 1000px) {
-  /* NOSOTROS PAGE */
-  /* MAIN */
-  .nosotros__section {
-    flex-direction: column; } }
-
-@media screen and (max-width: 578px) {
-  /* NOSOTROS PAGE */
-  /* MAIN */
-  .nosotros__section {
-    flex-direction: column;
-    width: 100%; } }
+  .nosotros .nosotros__section {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+    border-radius: .6rem;
+    box-shadow: 7px 5px 14px -6px #4e2313;
+    align-items: center;
+    width: 100%; }
+    @media screen and (max-width: 1000px) {
+      .nosotros .nosotros__section {
+        flex-direction: column; } }
+    @media screen and (max-width: 578px) {
+      .nosotros .nosotros__section {
+        flex-direction: column;
+        width: 100%; } }
+    .nosotros .nosotros__section .nosotros__img {
+      border-radius: .6rem;
+      width: 100%; }
+    .nosotros .nosotros__section .nosotros__h3 {
+      font-size: 2.5rem;
+      font-family: "DM Serif Display", serif;
+      color: #4e2313; }
+    .nosotros .nosotros__section .nosotros__p {
+      font-size: 1.8rem;
+      font-family: "Lexend", sans-serif;
+      color: #4e2313;
+      text-align: center; }

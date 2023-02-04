@@ -98,7 +98,7 @@ body {
             border: none;
             color: $blanco;
             cursor: pointer;
-            padding: .8rem 1.6rem;
+            padding: .5rem 4rem;
             text-decoration: none;
             transition: background-color linear .3s;
             border-radius: .6rem;
@@ -116,7 +116,6 @@ body {
     @media screen and (max-width: 578px) {
         display: flex;
         flex-direction: column;
-
     }
 }
 
@@ -220,6 +219,10 @@ body {
         margin: 3rem;
         font-size: 5.5rem;
         margin-top: 6rem;
+        @media screen and (max-width: 578px){
+            margin: 2;
+            margin-top: 0;
+        }
 
         &:first-child {
             margin-right: auto;

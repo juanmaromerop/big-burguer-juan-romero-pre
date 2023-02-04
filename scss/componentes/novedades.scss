@@ -1,60 +1,50 @@
 /* NOVEDADES PAGE */
 /* MAIN */
+ .novedades {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: repeat(2, 1fr);
+     grid-gap: 2rem;
+     margin: 2rem;
 
-.novedades {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 2rem;
-    margin: 2rem;
-}
+     @media screen and (max-width: 1000px) {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         grid-template-rows: repeat(3, 1fr);
+     }
 
-.novedades__div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-    box-shadow: 7px 5px 14px -6px $marron;
-    border-radius: .6rem;
-}
+     @media screen and (max-width: 578px) {
+         display: flex;
+         flex-direction: column;
+     }
 
-.novedades__img {
-    width: 100%;
-    border-radius: .6rem;
-}
+     .novedades__div {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 1rem;
+         padding: 1rem;
+         box-shadow: 7px 5px 14px -6px $marron;
+         border-radius: .6rem;
 
-.novedades__h3 {
-    font-size: 3rem;
-    font-family: $titulo2;
-    color: $marron;
-}
+         .novedades__img {
+             width: 100%;
+             border-radius: .6rem;
+         }
 
-.novedades__p {
-    font-size: 2rem;
-    font-family: $texto;
-    color: $marron;
-    text-align: center;
-}
+         .novedades__h3 {
+             font-size: 3rem;
+             font-family: $titulo2;
+             color: $marron;
+         }
 
-@media screen and (max-width: 1000px) {
-    /* NOVEDADES PAGE */
-    /* MAIN */
+         .novedades__p {
+             font-size: 2rem;
+             font-family: $texto;
+             color: $marron;
+             text-align: center;
+         }
+     }
+ }
 
-    .novedades {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-    }
-}
-
-@media screen and (max-width: 578px) {
-    /* NOVEDADES PAGE */
-    /* MAIN */
-
-    .novedades {
-        display: flex;
-        flex-direction: column;
-    }
-
-}
+   

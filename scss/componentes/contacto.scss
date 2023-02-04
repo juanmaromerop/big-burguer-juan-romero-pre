@@ -18,7 +18,8 @@
         gap: 3rem;
 
         .contacto__input {
-            width: 40rem;
+            width: 50rem;
+            margin-left: 1rem;
             font-size: 2rem;
             font-family: $texto;
             background-color: transparent;
@@ -41,7 +42,8 @@
         }
 
         .contacto__iframe {
-            width: 40rem;
+            width: 55rem;
+            margin-right: 1rem;
         }
     }
 }
