@@ -1,5 +1,4 @@
 let productSelected
-let cartView = document.getElementById('cart')
 let products = [
     {
         id: 1,
