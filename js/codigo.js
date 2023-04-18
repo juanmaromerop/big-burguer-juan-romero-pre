@@ -39,7 +39,7 @@ let products = [
     },
     {
         id: 5,
-        nombre: "Hamburguesa Vegui",
+        nombre: "Hamburguesa Veguie",
         categoria: "Hamburguesa",
         descripcion: "Hamburguesa de lentejas con tomate, lechuga y condimentos",
         precio: 16.99,
